@@ -16,28 +16,6 @@
     />
   </head>
   <body>
-    <header class="apple-navbar">
-      <div class="NavLogo">
-        <img
-          src="IconNav.svg"
-          alt="Ink And Paper Logo"
-        />
-        <div class="apple-logo">스크린과 종이 사이</div>
-      </div>
-      <button class="apple-hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </button>
-    </header>
-
-    <aside class="apple-sidebar" id="sidebar">
-      <button class="apple-close" id="closeBtn">×</button>
-      <nav class="apple-menu">
-        <a href="https://aesthness.github.io/workshop_book/">홈</a>
-        <a href="https://aesthness.github.io/workshop_compare/">폰트 비교하기</a>
-        <a href="https://aesthness.github.io/workshop_detail/">폰트 실험실</a>
-      </nav>
-    </aside>
-    
     <div class="wrap">
       <div class="head"></div>
       <p id="content" contenteditable="true">
@@ -219,25 +197,6 @@
       // 드래그 상태 변수
       let isDragging = false;
       let startX, startY;
-
-      const hamburger = document.getElementById("hamburger");
-      const sidebar = document.getElementById("sidebar");
-      const closeBtn = document.getElementById("closeBtn");
-
-      hamburger.addEventListener("click", () => {
-        sidebar.classList.add("active");
-      });
-
-      closeBtn.addEventListener("click", () => {
-        sidebar.classList.remove("active");
-      });
-
-      // (선택) 외부 클릭 시 닫기
-      document.addEventListener("click", (e) => {
-        if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
-          sidebar.classList.remove("active");
-        }
-      });
 
       // 글자 크기 표시 업데이트
       function updateFontSizeDisplay() {
