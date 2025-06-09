@@ -133,7 +133,7 @@
 
 @font-face {
   font-family: "KoPub";
-  src: url("font/KoPub\ Batang_Pro\ Bold.otf") format("opentype");
+  src: url("KoPub\ Batang_Pro\ Bold.otf") format("opentype");
   font-weight: 700;
   font-style: bold;
 }
