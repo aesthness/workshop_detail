@@ -119,14 +119,14 @@
 
 @font-face {
   font-family: "KoPub";
-  src: url("font/KoPub\ Batang_Pro\ Light.otf") format("opentype");
+  src: url("KoPub\ Batang_Pro\ Light.otf") format("opentype");
   font-weight: 300;
   font-style: light;
 }
 
 @font-face {
   font-family: "KoPub";
-  src: url("font/KoPub\ Batang_Pro\ Medium.otf") format("opentype");
+  src: url("KoPub\ Batang_Pro\ Medium.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
