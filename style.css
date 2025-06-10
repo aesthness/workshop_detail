@@ -138,7 +138,7 @@
   font-style: bold;
 }
 
-@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 body {
   background-color: #000;
