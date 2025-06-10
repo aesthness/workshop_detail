@@ -138,6 +138,8 @@
   font-style: bold;
 }
 
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
 body {
   background-color: #000;
   margin: 0;
