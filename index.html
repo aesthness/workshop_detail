@@ -16,7 +16,6 @@
     />
   </head>
   <body>
-    <button class="save-image-btn" id="saveAsImageBtn">이미지로 저장</button>
     <div class="wrap">
       <div class="head"></div>
       <p id="content" contenteditable="true">
@@ -228,18 +227,6 @@
           updateFontSizeDisplay();
         }
       }
-
-      // 이미지로 저장
-      const saveAsImageBtn = document.getElementById("saveAsImageBtn");
-  
-      saveAsImageBtn.addEventListener("click", () => {
-        html2canvas(content, {scsale: 3}).then((canvas) => {
-          const link = document.createElement("a");
-          link.download = "text-image.png";
-          link.href = canvas.toDataURL("image/png");
-          link.click();
-        });
-      });
 
       function toggleSpacingPopup() {
         spacingPopup.classList.toggle("hidden");
